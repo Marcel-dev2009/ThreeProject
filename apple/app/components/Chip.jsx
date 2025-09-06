@@ -46,7 +46,7 @@ function Chip() {
    <div className="mt-10 md:mt-20 mb-14">
       <div className="relative h-full flex-center">
          <div className="overflow-hidden">
-         <Image src={frameImg} alt="frame"  className="bg-transparent relative z-100"/>
+         <Image src={frameImg} alt="frame"  className="bg-transparent relative z-100" loading="lazy"/>
          </div>
          <div className="hiw-video">
           <video className="pointer-events-none" playsInline preload="none" muted autoPlay ref={videoRef}>

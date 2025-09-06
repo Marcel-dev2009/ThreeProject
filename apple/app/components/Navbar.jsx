@@ -24,7 +24,7 @@ function Navbar() {
     <>
      <header className="w-full py-5 sm:px-10 px-5 "> {/* flex justify-between items-center */}
          <nav className="flex w-full max-w-[1120px] justify-between items-center">
-          <Image src={appleImg} alt="Apple" width={14} height={18}/>
+          <Image src={appleImg} alt="Apple" width={14} height={18} loading="lazy"/>
          
           <div className="text-white flex flex-1 justify-center  max-sm:hidden transform translate-x-26 font-bold 
           border w-fit py-4 rounded-lg border-white/10">

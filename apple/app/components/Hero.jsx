@@ -40,7 +40,7 @@ function Hero() {
      <div className="h-auto w-full grid place-content-center transform translate-y-10">
         <p id="hero" className="hero-title">Iphone 15 pro</p>
         <div className={`md:w-10/12 w-9/12 transform ${Narrow ? "translate-x-10" : "translate-x-20"}`}>
-         <video className="pointer-events-none mb-10" autoPlay muted loop playsInline={true} src={Narrow ? "/assets/videos/smallHero.mp4" : "/assets/videos/hero.mp4"}>
+         <video className="pointer-events-none mb-10" preload="none" autoPlay muted loop playsInline={true} src={Narrow ? "/assets/videos/smallHero.mp4" : "/assets/videos/hero.mp4"}>
          </video>
         </div>
      </div>

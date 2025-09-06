@@ -49,17 +49,17 @@ function Features() {
         </div>
         <div className="flex-center flex-col gap-1.5 sm:px-10 ">
           <div className="relative h-[50vh] w-full flex items-center">
-           <video id="exploreVideo" className="w-full h-full object-cover object-center rounded-2xl" autoPlay muted playsInline preload="none" ref={videoRef}>
+           <video id="exploreVideo" className="w-full h-full object-cover object-center rounded-2xl" autoPlay muted playsInline preload="none" ref={videoRef} >
                <source src="assets/videos/explore.mp4" type="video/mp4"/>    
            </video>
           </div>
           <div className="flex flex-col w-full relative">
             <div className="feature-video-container">
              <div className="overflow-hidden flex-1 h-[50vh]">
-             <Image src={explore1Img} alt="explore image" className="feature-video g_grow"/>
+             <Image src={explore1Img} alt="explore image" className="feature-video g_grow" loading="lazy"/>
              </div>
              <div className="overflow-hidden flex-1 h-[50vh]">
-             <Image src={explore2Img} alt="explore image" className="feature-video g_grow"/>
+             <Image src={explore2Img} alt="explore image" className="feature-video g_grow" loading="lazy"/>
              </div>
             </div>
             <div className="feature-text-container">
