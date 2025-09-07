@@ -140,7 +140,7 @@ useGSAP(() => {
        <div key={list.id} id="slider"  className="sm:pr-20 pr-10">
           <div className="video-carousel_container">
                 <div className="w-full h-full rounded-3xl overflow-hidden bg-black">
-                    <video id="video" playsInline={true} preload="none" muted ref={(el) => {videoRef.current[i] = el}}
+                    <video id="video" playsInline={true}  muted ref={(el) => {videoRef.current[i] = el}}
                       onPlay={() => {
                          setVideo((prevVideo) => ({...prevVideo , isPlaying : true}))     
                       }} onLoadedMetadata={(e) => handleLoaded(i , e)}

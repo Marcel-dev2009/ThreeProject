@@ -2,7 +2,6 @@
 import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
 import { useEffect, useState } from "react"
-import { Button } from "@/components/ui/button"
 import Link from "next/link"
 function Hero() {
   const useWidth = (threshold =  768) => {
@@ -45,9 +44,9 @@ function Hero() {
         </div>
      </div>
      <div id="cta" className="flex flex-col items-center opacity-0 translate-y-20">
-      <Button asChild className="px-10">
-       <Link href="#highlights">Buy</Link>
-      </Button>
+      <button className="px-10">
+      <Link href="#highlights">Buy</Link>
+      </button>
       <p className="pointer-events-none mt-10 text-lg">From $199/Month - $999/Year</p>
      </div>
     </section>
